@@ -724,9 +724,8 @@ body {
 .left-upper-section {
     display: flex;
     flex-direction: column;
-    padding-top: 15px;
+    padding: 10px 30px;
     gap: 20px;
-    width: 70%;
 }
 
 
