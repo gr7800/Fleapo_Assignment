@@ -18,6 +18,40 @@ navLinks.forEach((link) => {
   });
 });
 
+// Mobile view chnage 
+const burgerOpen = document.getElementById('burger_open');
+const burgerClose = document.getElementById('burger_close');
+
+burgerOpen.addEventListener('click', (e) => {
+  e.preventDefault();
+  burgerOpen.style.display = "none";
+  burgerClose.style.display = "block";
+  document.getElementById("mobile_view_id").style.display = "block"
+  document.querySelector(".homepage-container").style.paddingTop = "270px";
+});
+
+burgerClose.addEventListener('click', (e) => {
+  e.preventDefault();
+  burgerClose.style.display = "none"
+  burgerOpen.style.display = "block"
+  document.getElementById("mobile_view_id").style.display = "none"
+  document.querySelector(".homepage-container").style.paddingTop = "104px";
+});
+
+function handleResize() {
+  if (window.innerWidth >= 769) {
+    burgerOpen.style.display = "none";
+    burgerClose.style.display = "none";
+    document.getElementById("mobile_view_id").style.display = "none"
+  } else {
+    burgerOpen.style.display = "block";
+  }
+}
+
+handleResize();
+window.addEventListener('resize', handleResize);
+
+
 // Get all question cards
 const questionCards = document.querySelectorAll('.question-card');
 
@@ -27,7 +61,8 @@ questionCards.forEach((questionCard) => {
   const plusIcon = question.querySelector('.plus-icon');
   const minusIcon = question.querySelector('.minus-icon');
 
-  question.addEventListener('click', () => {
+  question.addEventListener('click', (e) => {
+    e.preventDefault();
     console.log("triger")
     if (answer.classList.contains('active')) {
       answer.classList.remove('active');
@@ -41,10 +76,10 @@ questionCards.forEach((questionCard) => {
   });
 });
 
-window.addEventListener('scroll', () => {
+window.addEventListener('scroll', (e) => {
+  e.preventDefault();
   const navHeader = document.querySelector('.header-nav');
   const scrollPosition = window.scrollY;
-
   if (scrollPosition > 0) {
     navHeader.classList.add('animatedbg');
   } else {

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fleapo Assignment</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="common.css" />
 </head>
 
 <body>
@@ -14,38 +15,60 @@
     </div>
     <!-- Navbar  -->
     <div class="header-nav">
-        <div class="logo-container">
-            <img src="assets/Logo.svg" alt="logo" id="logo-img">
+        <div class="main-nav">
+            <div class="logo-container">
+                <img src="assets/Logo.svg" alt="logo" id="logo-img">
+            </div>
+            <div class="nav-links">
+                <a class="nav-link active paragraphText" href="#home" id="home-tab">Home</a>
+                <a class="nav-link paragraphText" href="#about" id="services-tab">About</a>
+                <a class="nav-link paragraphText" href="#how-it-works" id="howitworks-tab">How it Works</a>
+                <a class="nav-link paragraphText" href="#services" id="services-tab">Services</a>
+            </div>
+            <div class="auth-container">
+                <span id="signin-txt" class="paragraphText">Sign In</span>
+                <button class="register-btn" id="signup-btn">Sign Up</button>
+            </div>
+            <div id="burger_menu">
+                <div id="burger_open">
+                    <img src="assets/hamburger-menu.svg" alt="burger_icon" width="30px" height="30px">
+                </div>
+                <div id="burger_close">
+                    <img src="assets/close-icon.svg" alt="close_icon" width="30px" height="30px">
+                </div>
+            </div>
         </div>
-        <div class="nav-links">
-            <a class="nav-link active" href="#home" id="home-tab">Home</a>
-            <a class="nav-link" href="#about" id="services-tab">About</a>
-            <a class="nav-link" href="#how-it-works" id="howitworks-tab">How it Works</a>
-            <a class="nav-link" href="#services" id="services-tab">Services</a>
-        </div>
-        <div class="auth-container">
-            <span id="signin-txt">Sign In</span>
-            <button class="register-btn" id="signup-btn">Sign Up</button>
+        <!-- Mobile Nav  -->
+        <div class="mobile_view" id="mobile_view_id">
+            <div class="mobile_view_list">
+                <a class="nav-link active paragraphText" href="#home" id="home-tab">Home</a>
+                <a class="nav-link paragraphText" href="#about" id="services-tab">About</a>
+                <a class="nav-link paragraphText" href="#how-it-works" id="howitworks-tab">How it Works</a>
+                <a class="nav-link paragraphText" href="#services" id="services-tab">Services</a>
+                <a class="nav-link paragraphText" href="#home" id="signin-in">Sign In</a>
+                <a class="nav-link paragraphText" href="#home" id="signup-in">Sign Un</a>
+            </div>
         </div>
     </div>
+
     <!-- Home  -->
     <div class="homepage-container" id="home">
         <div class="homepage-div">
-            <p>Awesome UI Dark Template for Webflow Agency</p>
+            <p class="mainHeading">Awesome UI Dark Template for Webflow Agency</p>
             <button>Get in Touch</button>
         </div>
     </div>
     <!-- Services  -->
     <div class="services-wrapper" id="services">
         <div class="services-info">
-            <p>What We do</p>
+            <p class="mainHeading">What We do</p>
             <div class="services-card-container">
                 <div class="services-card">
                     <div class="services-card-img-div">
                         <img src="assets/Frame.svg" alt="">
                     </div>
-                    <p class="services-card-heading">Web Design</p>
-                    <p class="services-card-text">From concept to launch, we create stunning, user-centric websites
+                    <p class="subHeading">Web Design</p>
+                    <p class="subParagraphText">From concept to launch, we create stunning, user-centric websites
                         that
                         elevate your brand and engage your audience.</p>
                 </div>
@@ -53,8 +76,8 @@
                     <div class="services-card-img-div">
                         <img src="assets/Frame (1).svg" alt="">
                     </div>
-                    <p class="services-card-heading">UI/UX Design</p>
-                    <p class="services-card-text">From concept to launch, we create stunning, user-centric websites
+                    <p class="subHeading">UI/UX Design</p>
+                    <p class="subParagraphText">From concept to launch, we create stunning, user-centric websites
                         that
                         elevate your brand and engage your audience.</p>
                 </div>
@@ -62,8 +85,8 @@
                     <div class="services-card-img-div">
                         <img src="assets/Frame (3).svg" alt="">
                     </div>
-                    <p class="services-card-heading">Responsive Design</p>
-                    <p class="services-card-text">From concept to launch, we create stunning, user-centric websites
+                    <p class="subHeading">Responsive Design</p>
+                    <p class="subParagraphText">From concept to launch, we create stunning, user-centric websites
                         that
                         elevate your brand and engage your audience.</p>
                 </div>
@@ -72,8 +95,8 @@
                         <div class="services-card-img-div">
                             <img src="assets/Frame (2).svg" alt="">
                         </div>
-                        <p class="services-card-heading">E-commerce Solutions:</p>
-                        <p class="services-card-text">From concept to launch, we create stunning, user-centric
+                        <p class="subHeading">E-commerce Solutions:</p>
+                        <p class="subParagraphText">From concept to launch, we create stunning, user-centric
                             websites
                             that elevate your brand and engage your audience.</p>
                     </div>
@@ -86,8 +109,8 @@
                         <div class="services-card-img-div">
                             <img src="assets/Group 27170.svg" alt="">
                         </div>
-                        <p class="services-card-heading">Webflow</p>
-                        <p class="services-card-text">From concept to launch, we create stunning, user-centric
+                        <p class="subHeading">Webflow</p>
+                        <p class="subParagraphText">From concept to launch, we create stunning, user-centric
                             websites
                             that elevate your brand and engage your audience.</p>
                     </div>
@@ -99,8 +122,8 @@
                     <div class="services-card-img-div">
                         <img src="assets/Frame (4).svg" alt="">
                     </div>
-                    <p class="services-card-heading">Custom Development</p>
-                    <p class="services-card-text">From concept to launch, we create stunning, user-centric websites
+                    <p class="subHeading">Custom Development</p>
+                    <p class="subParagraphText">From concept to launch, we create stunning, user-centric websites
                         that
                         elevate your brand and engage your audience.</p>
                 </div>
@@ -116,8 +139,9 @@
                 </div>
             </div>
             <div class="text-container">
-                <p id="demo">Check our Work</p>
-                <p>Take a look at some of our recent projects to see how we've helped businesses like yours succeed
+                <p id="demo" class="mainHeading">Check our Work</p>
+                <p class="subParagraphText">Take a look at some of our recent projects to see how we've helped
+                    businesses like yours succeed
                     online.</p>
             </div>
             <div class="arrow-container">
@@ -159,54 +183,52 @@
             <div class="pricing-inner">
                 <div class="pricing-left-col">
                     <div class="left-upper-section">
-                        <p>Pricing</p>
-                        <p>Take a look at some of our recent projects to see how we've helped businesses like yours
+                        <p class="mainHeading">Pricing</p>
+                        <p class="subParagraphText">Take a look at some of our recent projects to see how we've helped
+                            businesses like yours
                             succeed online.</p>
                     </div>
                     <div class="left-lower-section">
-                        <p>Let's Schedule a Meeting</p>
+                        <p class="railway3440">Let's Schedule a Meeting</p>
                         <button>Schedule Meeting</button>
                     </div>
                 </div>
                 <div class="pricing-right-col">
                     <div class="right-upper-section">
-                        <p>Unlimited Services</p>
-                        <p>Take a look at some of our recent projects to see how we've helped businesses like yours
+                        <p class="railway3036">Unlimited Services</p>
+                        <p class="subParagraphText">Take a look at some of our recent projects to see how we've helped
+                            businesses like yours
                             succeed online.</p>
                     </div>
                     <div class="right-middle-section">
                         <div>
-                            <div>
-                                <img src="assets/Vector (1).svg" alt="">
-                                <p>Unlimited requests</p>
-                            </div>
-                            <div>
-                                <img src="assets/Vector (1).svg" alt="">
-                                <p>Unlimited requests</p>
-                            </div>
-                            <div>
-                                <img src="assets/Vector (1).svg" alt="">
-                                <p>Unlimited requests</p>
-                            </div>
+                            <img src="assets/Vector (1).svg" alt="">
+                            <p class="subParagraphTextBlack">Unlimited requests</p>
                         </div>
                         <div>
-                            <div>
-                                <img src="assets/Vector (1).svg" alt="">
-                                <p>Unlimited requests</p>
-                            </div>
-                            <div>
-                                <img src="assets/Vector (1).svg" alt="">
-                                <p>Unlimited requests</p>
-                            </div>
-                            <div>
-                                <img src="assets/Vector (1).svg" alt="">
-                                <p>Unlimited requests</p>
-                            </div>
+                            <img src="assets/Vector (1).svg" alt="">
+                            <p class="subParagraphTextBlack">Unlimited requests</p>
+                        </div>
+                        <div>
+                            <img src="assets/Vector (1).svg" alt="">
+                            <p class="subParagraphTextBlack">Unlimited requests</p>
+                        </div>
+                        <div>
+                            <img src="assets/Vector (1).svg" alt="">
+                            <p class="subParagraphTextBlack">Unlimited requests</p>
+                        </div>
+                        <div>
+                            <img src="assets/Vector (1).svg" alt="">
+                            <p class="subParagraphTextBlack">Unlimited requests</p>
+                        </div>
+                        <div>
+                            <img src="assets/Vector (1).svg" alt="">
+                            <p class="subParagraphTextBlack">Unlimited requests</p>
                         </div>
                     </div>
                     <div class="right-lower-section">
                         <div>
-                            <span class="bold">$3,250 <span class="faint">/mo</span></span>
+                            <p class="mainHeadinginter">$3,250 <span class="subParagraphText20">/mo</span></p>
                         </div>
                         <div>
                             <img src="assets/Frame (6).svg" alt="">
@@ -222,76 +244,81 @@
         <!-- Frequently Asked questionSction  -->
         <div class="faq-container">
             <div class="faq-header">
-                <p>Frequently Asked Questions</p>
+                <p class="mainHeading">Frequently Asked Questions</p>
             </div>
             <div class="faq-questions">
                 <div class="question-card" id="question-1">
                     <div class="question">
-                        <p>How can I contact Inkyy Team?</p>
+                        <p class="subParagraphText1821black">How can I contact Inkyy Team?</p>
                         <div>
                             <img src="assets/Frame (8).svg" alt="" class="plus-icon">
                             <img src="assets/Frame (7).svg" alt="" class="minus-icon">
                         </div>
                     </div>
-                    <div class="answer">
-                        <p>You can reach us through our contact form on our website or by emailing us at <a
-                                href="mailto:hello@inkyy.com"><span>hello@inkyy.com</span></a> We typically respond
+                    <div class="answer active">
+                        <p class="subParagraphText">You can reach us through our contact form on our website or by
+                            emailing us at <a href="mailto:hello@inkyy.com"><span>hello@inkyy.com</span></a> We
+                            typically respond
                             within 24 hours.</p>
                     </div>
                 </div>
                 <div class="question-card" id="question-2">
                     <div class="question">
-                        <p>How can I contact Inkyy Team?</p>
+                        <p class="subParagraphText1821black">How can I contact Inkyy Team?</p>
                         <div>
                             <img src="assets/Frame (8).svg" alt="" class="plus-icon">
                             <img src="assets/Frame (7).svg" alt="" class="minus-icon">
                         </div>
                     </div>
                     <div class="answer">
-                        <p>You can reach us through our contact form on our website or by emailing us at <a
-                                href="mailto:hello@inkyy.com"><span>hello@inkyy.com</span></a> We typically respond
+                        <p class="subParagraphText">You can reach us through our contact form on our website or by
+                            emailing us at <a href="mailto:hello@inkyy.com"><span>hello@inkyy.com</span></a> We
+                            typically respond
                             within 24 hours.</p>
                     </div>
                 </div>
                 <div class="question-card" id="question-3">
                     <div class="question">
-                        <p>How can I contact Inkyy Team?</p>
+                        <p class="subParagraphText1821black">How can I contact Inkyy Team?</p>
                         <div>
                             <img src="assets/Frame (8).svg" alt="" class="plus-icon">
                             <img src="assets/Frame (7).svg" alt="" class="minus-icon">
                         </div>
                     </div>
                     <div class="answer">
-                        <p>You can reach us through our contact form on our website or by emailing us at <a
-                                href="mailto:hello@inkyy.com"><span>hello@inkyy.com</span></a> We typically respond
+                        <p class="subParagraphText">You can reach us through our contact form on our website or by
+                            emailing us at <a href="mailto:hello@inkyy.com"><span>hello@inkyy.com</span></a> We
+                            typically respond
                             within 24 hours.</p>
                     </div>
                 </div>
                 <div class="question-card" id="question-4">
                     <div class="question">
-                        <p>How can I contact Inkyy Team?</p>
+                        <p class="subParagraphText1821black">How can I contact Inkyy Team?</p>
                         <div>
                             <img src="assets/Frame (8).svg" alt="" class="plus-icon">
                             <img src="assets/Frame (7).svg" alt="" class="minus-icon">
                         </div>
                     </div>
                     <div class="answer">
-                        <p>You can reach us through our contact form on our website or by emailing us at <a
-                                href="mailto:hello@inkyy.com"><span>hello@inkyy.com</span></a> We typically respond
+                        <p class="subParagraphText">You can reach us through our contact form on our website or by
+                            emailing us at <a href="mailto:hello@inkyy.com"><span>hello@inkyy.com</span></a> We
+                            typically respond
                             within 24 hours.</p>
                     </div>
                 </div>
                 <div class="question-card" id="question-5">
                     <div class="question">
-                        <p>How can I contact Inkyy Team?</p>
+                        <p class="subParagraphText1821black">How can I contact Inkyy Team?</p>
                         <div>
                             <img src="assets/Frame (8).svg" alt="" class="plus-icon">
                             <img src="assets/Frame (7).svg" alt="" class="minus-icon">
                         </div>
                     </div>
                     <div class="answer">
-                        <p>You can reach us through our contact form on our website or by emailing us at <a
-                                href="mailto:hello@inkyy.com"><span>hello@inkyy.com</span></a> We typically respond
+                        <p class="subParagraphText">You can reach us through our contact form on our website or by
+                            emailing us at <a href="mailto:hello@inkyy.com"><span>hello@inkyy.com</span></a> We
+                            typically respond
                             within 24 hours.</p>
                     </div>
                 </div>
@@ -313,13 +340,13 @@
     <!-- Contact Section  -->
     <div class="contact-section">
         <div class="contact-form-container">
-            <p>Let's Get in Touch</p>
+            <p class="mainHeading">Let's Get in Touch</p>
             <form>
-                <label for="email-input">email</label>
+                <label for="email-input" class="subParagraphText1821black" id="enter">email</label>
                 <input type="email" placeholder="example@email.com" id="email-input">
-                <label for="name-input">name</label>
+                <label for="name-input" class="subParagraphText1821black" id="enter">name</label>
                 <input type="text" placeholder="full name" id="name-input">
-                <label for="message-input">message</label>
+                <label for="message-input" class="subParagraphText1821black" id="enter">message</label>
                 <textarea id="message-input" placeholder="write your message..."></textarea>
                 <button>Get in touch</button>
             </form>
@@ -335,20 +362,21 @@
                     <img src="assets/Logo (2).svg" alt="" class="bottom-logo">
                 </div>
                 <div>
-                    <p>Ready to elevate your online presence? Contact us today to discuss your project and discover how
+                    <p class="paragraphText">Ready to elevate your online presence? Contact us today to discuss your
+                        project and discover how
                         we can bring your vision to life.</p>
                 </div>
                 <div>
                     <img src="assets/Frame (9).svg" alt="">
-                    <p>Made with love powered by inkyy.com</p>
+                    <p class="paragraphText">Made with love powered by inkyy.com</p>
                 </div>
             </div>
             <div id="responsivelast">
                 <div class="nav-links">
-                    <a class="nav-link active" href="#home" id="home-tab">Home</a>
-                    <a class="nav-link" href="#about" id="services-tab">About</a>
-                    <a class="nav-link" href="#how-it-works" id="howitworks-tab">How it Works</a>
-                    <a class="nav-link" href="#services" id="services-tab">Services</a>
+                    <a class="nav-link active subParagraphText" href="#home" id="home-tab">Home</a>
+                    <a class="nav-link subParagraphText" href="#about" id="services-tab">About</a>
+                    <a class="nav-link subParagraphText" href="#how-it-works" id="howitworks-tab">How it Works</a>
+                    <a class="nav-link subParagraphText" href="#services" id="services-tab">Services</a>
                 </div>
                 <div id="socialicons">
                     <div>

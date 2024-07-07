@@ -1,0 +1,198 @@
+.mainHeading {
+    color: #252432;
+    font-weight: 700;
+    font-family: 'raleway';
+    font-size: 60px;
+    line-height: 72px;
+}
+
+.mainHeadinginter {
+    color: #252432;
+    font-weight: 700;
+    font-family: 'inter';
+    font-size: 60px;
+    line-height: 72px;
+}
+
+.subHeading {
+    font-family: 'inter';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #252432;
+}
+
+.subParagraphText20 {
+    font-family: 'inter';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #8987A1;
+}
+
+.paragraphText {
+    font-family: 'inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8987A1;
+}
+
+.subParagraphText {
+    font-family: 'inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #8987A1;
+}
+
+.subParagraphTextBlack {
+    font-family: 'inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25.2px;
+    color: rgba(37, 36, 50, 1);
+}
+
+.railway3440 {
+    font-family: 'raleway';
+    font-weight: 700;
+    font-size: 34.07px;
+    line-height: 40.88px;
+    color: #252433;
+}
+
+.subParagraphText1821black {
+    font-size: 18px;
+    font-weight: 700;
+    color: #252433;
+    font-family: "raleway";
+}
+
+.enter {
+    font-family: 'inter';
+}
+
+.railway3036 {
+    font-family: 'raleway';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: rgba(37, 36, 50, 1);
+}
+
+/* Media queries for responsiveness */
+
+/* For screens with a maximum width of 1200px (laptops) */
+@media only screen and (max-width: 1024px) {
+    .mainHeading {
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    .mainHeadinginter {
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    .subHeading {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .subParagraphText1821black {
+        font-weight: 700;
+    }
+    .railway3440{
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .railway3036 {
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+}
+
+/* For screens with a maximum width of 768px (tablets) */
+@media only screen and (max-width: 768px) {
+    .mainHeading {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .mainHeadinginter {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .subHeading {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .subParagraphText20 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .paragraphText {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+
+    .railway3440 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .subParagraphText1821black {
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 700;
+    }
+
+    .railway3036 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+}
+
+/* For screens with a maximum width of 480px (mobiles) */
+@media only screen and (max-width: 480px) {
+    .mainHeading {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .mainHeadinginter {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .paragraphText {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .subParagraphText {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .subParagraphTextBlack {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .railway3440 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .railway3036 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
