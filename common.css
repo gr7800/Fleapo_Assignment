@@ -233,6 +233,7 @@
         line-height: 30px;
     }
 
+
     .subHeading {
         font-size: 12px;
         line-height: 16px;
@@ -250,6 +251,11 @@
 
 
     .subParagraphTextBlack {
+        font-size: 10px;
+        line-height: 16px;
+    }
+
+    .subParagraphText {
         font-size: 10px;
         line-height: 16px;
     }
