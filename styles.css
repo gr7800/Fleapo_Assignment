@@ -118,9 +118,6 @@ body {
     width: 132px;
     min-width: 100px;
     height: 48px;
-    font-size: 16px;
-    font-family: "inter";
-    color: rgba(255, 255, 255, 1);
     background-color: rgba(78, 71, 255, 1);
     border-radius: 10px;
     border: none;
@@ -300,7 +297,8 @@ body {
 
 @media (max-width: 768px) {
     .homepage-div {
-        max-width: 400px;
+        /* max-width: 400px; */
+        padding: 0px 20px 0px 20px;
         margin: 50px 0px;
     }
 
@@ -1297,11 +1295,12 @@ form textarea {
     .nav-link {
         white-space: nowrap;
     }
+
     .contact-form-container input::placeholder {
         font-size: 18px;
         line-height: 25px;
     }
-    
+
     .contact-form-container textarea::placeholder {
         font-size: 18px;
         line-height: 25px;
@@ -1331,7 +1330,7 @@ form textarea {
         gap: 20px;
     }
 
-    .coloredanim{
+    .coloredanim {
         min-height: 1200px;
     }
 
@@ -1365,7 +1364,7 @@ form textarea {
         font-size: 16px;
         line-height: 22px;
     }
-    
+
     .contact-form-container textarea::placeholder {
         font-size: 16px;
         line-height: 22px;
@@ -1376,10 +1375,12 @@ form textarea {
     .responsive-bottom-container {
         padding: 30px 20px 30px 20px;
     }
-    #footernav{
+
+    #footernav {
         min-width: 100%;
     }
-    .coloredanim{
+
+    .coloredanim {
         min-height: 900px;
     }
 
@@ -1387,10 +1388,10 @@ form textarea {
         font-size: 14px;
         line-height: 20px;
     }
-    
+
     .contact-form-container textarea::placeholder {
         font-size: 14px;
         line-height: 20px;
     }
-   
+
 }

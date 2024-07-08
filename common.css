@@ -43,6 +43,14 @@
     color: #8987A1;
 }
 
+.paragraphTextbtn {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: 'inter';
+    color: rgba(255, 255, 255, 1);
+}
+
 .subParagraphText {
     font-size: 14px;
     line-height: 21px;
@@ -88,7 +96,6 @@
 
 /* Media Queries */
 
-/* Laptop (1024px - 1280px) */
 
 @media (max-width: 1024px) {
     .mainHeading {
@@ -117,6 +124,11 @@
     }
 
     .paragraphText {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .paragraphTextbtn {
         font-size: 14px;
         line-height: 20px;
     }
@@ -171,18 +183,23 @@
     }
 
     .paragraphText {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .paragraphTextbtn {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .subParagraphText {
         font-size: 12px;
         line-height: 18px;
     }
 
-    .subParagraphText {
-        font-size: 10px;
-        line-height: 16px;
-    }
-
     .subParagraphTextBlack {
-        font-size: 10px;
-        line-height: 16px;
+        font-size: 12px;
+        line-height: 18px;
     }
 
     .railway3440 {
@@ -231,15 +248,6 @@
         line-height: 20px;
     }
 
-    .paragraphText {
-        font-size: 10px;
-        line-height: 16px;
-    }
-
-    .subParagraphText {
-        font-size: 10px;
-        line-height: 16px;
-    }
 
     .subParagraphTextBlack {
         font-size: 10px;
@@ -252,8 +260,8 @@
     }
 
     .subParagraphText1821black {
-        font-size: 12px;
-        line-height: 18px;
+        font-size: 14px;
+        line-height: 20px;
         font-weight: 700;
     }
 
